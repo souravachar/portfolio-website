@@ -1,0 +1,521 @@
+* {
+  margin: 10px;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(66, 66, 137);
+  font-size: 1.04rem;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 130px o;
+}
+
+.firstsection > div {
+  width: 30%;
+}
+
+.leftsection {
+  font-size: 3rem;
+}
+
+.leftsection .btn {
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.leftsection .btn a{
+  color: white;
+  text-decoration: none;
+}
+
+.leftsection .buttons {
+  padding: 50px 0;
+}
+
+.rightsection img {
+  width: 80%;
+}
+
+.purple {
+  color: rgb(147, 110, 182);
+}
+
+.textgray {
+  color: gray;
+}
+
+.element {
+  color: rgb(62, 62, 183);
+}
+
+.secondsection {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.secondsection h1 {
+  font-size: 1.9rem;
+}
+
+main hr {
+  border: 0;
+  background: rgb(153, 153, 226);
+  height: 1.2px;
+  margin: 40px 84px;
+}
+
+/* About Me */
+.about-me {
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+#about-me h1 {
+  font-size: 65px;
+  margin-top: 90px;
+  color: #7600bc;
+}
+
+#about-me p {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  margin-top: -1cm;
+}
+
+.profile_image {
+  width: 550px;
+  height: fit-content;
+  vertical-align: middle;
+  margin: 5px;
+}
+
+/* Skills */
+
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.skill {
+  border: 1px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+}
+
+.skill img {
+  height: 35px;
+  align-items: center;
+}
+
+.skills h6 {
+  align-items: center;
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+}
+
+.skills p {
+  align-items: center;
+  font-size: 15px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Projects */
+
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.project-card li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/* Recommendations */
+
+.all_recommendations {
+  display: flex;
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  height: 150px;
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Scroll to Top Button */
+
+.iconbutton {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+
+/* Form Pop-up */
+
+.popup {
+  width: 400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  /* padding: 30px; */
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+/* Recommendation Form */
+
+input,
+textarea {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 10px;
+  width: 100%;
+}
+
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;
+  padding: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: thin solid white;
+  width: 50%;
+}
+
+/* Buttons */
+
+button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: white;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #7600bc;
+  border: 1px solid #7600bc;
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.secondsection .box {
+  background: white;
+  width: 77vp;
+  height: 2px;
+  margin: 50px 0;
+  display: flex;
+}
+
+.secondsection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 120px;
+}
+
+.image-top {
+  width: 23px;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 75px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 86px;
+  color: gray;
+  width: 150px;
+  font-size: 9px;
+}
+
+footer {
+  background-color: #0e0e1a;
+  position: relative;
+  top: 23vh;
+  width: 100%;
+  height: 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer img{
+  width: 100%;
+  height: 100%;
+}
+.footer ul {
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.footer > div {
+  width: 223px;
+}
+
+footer .footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
+}
+.brown{
+  color: gray;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .secondsection .vertical {
+    height: unset;
+  }
+
+  .secondsection .box {
+    width: 50vw;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .vertical-title,
+  .vertical-desc {
+    left: 45px;
+  }
+  .firstsection {
+    flex-direction: column-reverse;
+  }
+  .leftsection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightsection {
+    width: 721px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .rightsection img {
+    width: 45%;
+  }
+
+  .secondsection {
+    height: 410vh;
+  }
+
+  .image-top {
+    top: 133px;
+  }
+
+  .secondsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    position: absolute; 
+    }
+    footer{
+      display: flex;
+      flex-direction: column;
+      align-items: last baseline;
+      top: 1586vh;
+      width: 100vw !important;
+
+    }
+  }
+
